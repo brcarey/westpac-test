@@ -1,11 +1,14 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './App';
+import CompanyDetails from './CompanyDetails';
 import registerServiceWorker from './registerServiceWorker';
+import Company from './Company';
 import './index.css';
 
+const data:Company = require('./sample-data.json');
+
 ReactDOM.render(
-  <App />,
+  <CompanyDetails company={data} />,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
