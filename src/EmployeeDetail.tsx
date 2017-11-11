@@ -16,8 +16,8 @@ const EmployeeDetail: React.SFC<EmployeeDetailProps> = props => {
                     <div>
                         <img src={employee.avatar} alt="avatar" />
                         <h5>{employee.jobTitle}</h5>
-                        <span>{employee.age}</span>
-                        <span>{employee.dateJoined}</span>
+                        <p>{employee.age}</p>
+                        <p>{new Date(employee.dateJoined).toLocaleDateString()}</p>
                     </div>
                     <div>
                         <h3>{employee.firstName} {employee.lastName}</h3>

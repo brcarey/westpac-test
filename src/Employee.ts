@@ -5,5 +5,5 @@ export default interface Employee {
     jobTitle: string
     age: number
     bio: string
-    dateJoined: Date
+    dateJoined: string
 }

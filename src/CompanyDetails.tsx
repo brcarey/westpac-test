@@ -16,7 +16,7 @@ class CompanyDetails extends React.Component<CompanyProps> {
             {companyInfo.companyName}
             <p className="motto">{companyInfo.companyMotto}</p>
           </h1>
-          <span className="est">Since {companyInfo.companyEst}</span>
+          <span className="est">Since {new Date(companyInfo.companyEst).toLocaleDateString()}</span>
         </div>
         <EmployeeGrid items={employees} />
       </div>
