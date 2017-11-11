@@ -22,7 +22,7 @@ class EmployeeGrid extends React.Component<EmployeeGridProps, EmployeeGridState>
         const {items} = this.props;
         const {selected} = this.state;
         return (
-            <div>
+            <div className="employees">
                 <h2>Our Employees</h2>
                 <ul className="grid">
                     {items.map((x: Employee, index: number) => {

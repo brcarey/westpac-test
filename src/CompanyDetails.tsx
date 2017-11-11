@@ -14,7 +14,7 @@ class CompanyDetails extends React.Component<CompanyProps> {
         <div className="header">
           <h1>
             {companyInfo.companyName}
-            <p>{companyInfo.companyMotto}</p>
+            <p className="motto">{companyInfo.companyMotto}</p>
           </h1>
           <span className="est">Since {companyInfo.companyEst}</span>
         </div>

@@ -13,10 +13,20 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  border-bottom: solid 1px #d0d0d0;
+  padding-bottom: 4px;
+}
+
+.employees h2, .employee-detail h3 {
+  border-bottom: solid 1px #d0d0d0;
 }
 
 .header span.est {
   margin-top: auto;
+}
+
+.header p.motto {
+  font-size: 12pt;
 }
 
 .header h1 {
