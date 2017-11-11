@@ -3,11 +3,11 @@ import Employee from './Employee';
 import EmployeeDetail from './EmployeeDetail';
 
 interface EmployeeGridProps {
-    items: Employee[]
+    items: Employee[];
 }
 
 interface EmployeeGridState {
-    selected?: Employee
+    selected?: Employee;
 }
 
 class EmployeeGrid extends React.Component<EmployeeGridProps, EmployeeGridState> {
@@ -27,7 +27,7 @@ class EmployeeGrid extends React.Component<EmployeeGridProps, EmployeeGridState>
                 <ul className="grid">
                     {items.map((x: Employee, index: number) => {
                         return (
-                            <li className="tile" onClick={() => this.setState({selected: x})}>
+                            <li key={index} className="tile" onClick={() => this.setState({selected: x})}>
                                 <img src={x.avatar} alt="avatar" />
                                 <div>
                                     <h3>{x.firstName} {x.lastName}</h3>
@@ -37,7 +37,9 @@ class EmployeeGrid extends React.Component<EmployeeGridProps, EmployeeGridState>
                         );
                     })}
                 </ul>
-                {selected && <EmployeeDetail employee={selected} onDismiss={() => this.setState({selected: undefined})} />}
+                {selected && <EmployeeDetail
+                                employee={selected}
+                                onDismiss={() => this.setState({selected: undefined})} />}
             </div>
         );
     }

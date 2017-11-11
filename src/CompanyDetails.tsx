@@ -3,7 +3,7 @@ import EmployeeGrid from './EmployeeGrid';
 import Company from './Company';
 
 interface CompanyProps {
-  company: Company
+  company: Company;
 }
 
 class CompanyDetails extends React.Component<CompanyProps> {

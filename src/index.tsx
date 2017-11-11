@@ -5,7 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 import Company from './Company';
 import './index.css';
 
-const data:Company = require('./sample-data.json');
+const data: Company = require('./sample-data.json');
 
 ReactDOM.render(
   <CompanyDetails company={data} />,

@@ -2,8 +2,8 @@ import * as React from 'react';
 import Employee from './Employee';
 
 interface EmployeeDetailProps {
-    employee: Employee
-    onDismiss: () => void
+    employee: Employee;
+    onDismiss: () => void;
 }
 
 const EmployeeDetail: React.SFC<EmployeeDetailProps> = props => {
@@ -27,6 +27,6 @@ const EmployeeDetail: React.SFC<EmployeeDetailProps> = props => {
             </div>
         </div>
     );
-}
+};
 
 export default EmployeeDetail;
