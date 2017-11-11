@@ -3,3 +3,104 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header span.est {
+  margin-top: auto;
+}
+
+.header h1 {
+  margin-bottom: 0;
+}
+
+.header p {
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grid > li {
+  width: 32%;
+  margin-bottom: 12px;
+}
+
+.tile {
+  display: flex;
+  cursor: pointer;
+}
+
+.tile img {
+  margin-right: 12px;
+  height: 128px;
+}
+
+.tile h3 {
+  margin-top: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  display: block;
+  width: 600px;
+  max-width: 100%;
+  height: 400px;
+  max-height: 100%;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+}
+
+.employee-detail > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.employee-detail > .tile {
+  padding: 12px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    display: block;
+  }
+
+  .grid > li {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid > li {
+    width: 50%;
+  }
+}

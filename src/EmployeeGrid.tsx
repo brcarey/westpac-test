@@ -24,10 +24,10 @@ class EmployeeGrid extends React.Component<EmployeeGridProps, EmployeeGridState>
         return (
             <div>
                 <h2>Our Employees</h2>
-                <ul className="employee-grid">
+                <ul className="grid">
                     {items.map((x: Employee, index: number) => {
                         return (
-                            <li onClick={() => this.setState({selected: x})}>
+                            <li className="tile" onClick={() => this.setState({selected: x})}>
                                 <img src={x.avatar} alt="avatar" />
                                 <div>
                                     <h3>{x.firstName} {x.lastName}</h3>

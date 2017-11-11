@@ -10,13 +10,13 @@ class CompanyDetails extends React.Component<CompanyProps> {
   render() {
     const {company: {employees, companyInfo}} = this.props;
     return (
-      <div className="app">
+      <div className="container">
         <div className="header">
           <h1>
             {companyInfo.companyName}
-            <span>{companyInfo.companyMotto}</span>
+            <p>{companyInfo.companyMotto}</p>
           </h1>
-          <span>Since {companyInfo.companyEst}</span>
+          <span className="est">Since {companyInfo.companyEst}</span>
         </div>
         <EmployeeGrid items={employees} />
       </div>
